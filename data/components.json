@@ -1,0 +1,17 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend",
+    "projectId": "default"
+  },
+  {
+    "id": "backend",
+    "name": "Backend",
+    "projectId": "default"
+  },
+  {
+    "id": "database",
+    "name": "Database",
+    "projectId": "default"
+  }
+]

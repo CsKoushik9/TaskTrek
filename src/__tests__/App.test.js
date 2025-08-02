@@ -1,27 +1,51 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import { render, waitFor, screen } from '@testing-library/react';
 import App from '../App';
 
-// Mock Dashboard component
-jest.mock('../components/Dashboard', () => {
-  return function MockDashboard() {
-    return <div data-testid="dashboard">Dashboard Component</div>;
-  };
-});
+// Mock child components
+jest.mock('../components/Dashboard', () => () => <div>Dashboard</div>);
 
-describe('App Component', () => {
+// Mock fetch
+global.fetch = jest.fn();
+
+describe('App', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    localStorage.clear();
+  });
+
   test('renders without crashing', () => {
     render(<App />);
+    expect(screen.getByText('Dashboard')).toBeInTheDocument();
   });
 
-  test('renders Dashboard component', () => {
+  test('handles successful data sync', async () => {
+    fetch
+      .mockResolvedValueOnce({
+        ok: true,
+        json: () => Promise.resolve([{ id: '1', title: 'Test Task' }]),
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: () => Promise.resolve([{ id: '1', name: 'Test Project' }]),
+      });
+
     render(<App />);
-    expect(screen.getByTestId('dashboard')).toBeInTheDocument();
+
+    await waitFor(() => {
+      expect(localStorage.getItem('tasktrek_tasks')).toBeTruthy();
+    });
+
+    await waitFor(() => {
+      expect(localStorage.getItem('tasktrek_projects')).toBeTruthy();
+    });
   });
 
-  test('has correct structure', () => {
+  test('handles fetch errors gracefully', async () => {
+    fetch.mockRejectedValue(new Error('Network error'));
+
     render(<App />);
-    expect(screen.getByTestId('dashboard')).toBeInTheDocument();
+
+    expect(screen.getByText('Dashboard')).toBeInTheDocument();
   });
 });

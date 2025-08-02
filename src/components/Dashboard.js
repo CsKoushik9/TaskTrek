@@ -4,6 +4,7 @@ import TaskForm from './TaskForm';
 import ProjectManager from './ProjectManager';
 import TaskDetail from './TaskDetail';
 import Analytics from './Analytics';
+import MCPStatus from './MCPStatus';
 import { storage, WORKFLOW_STATUSES } from '../utils/storage';
 import { notificationService } from '../utils/notifications';
 
@@ -20,7 +21,18 @@ const Dashboard = () => {
     setTasks(storage.getTasks());
   }, [refreshKey]);
 
-  const refreshData = () => {
+  const refreshData = async () => {
+    // Sync with MCP server data
+    try {
+      const response = await fetch('/data/tasks.json').catch(() => null);
+      if (response && response.ok) {
+        const tasks = await response.json();
+        localStorage.setItem('tasktrek_tasks', JSON.stringify(tasks));
+        setTasks(tasks);
+      }
+    } catch (error) {
+      console.log('Manual sync failed:', error);
+    }
     setRefreshKey((prev) => prev + 1);
   };
 
@@ -173,6 +185,20 @@ const Dashboard = () => {
             </p>
           </div>
           <div style={{ display: 'flex', gap: '10px' }}>
+            <button
+              onClick={refreshData}
+              style={{
+                padding: '8px 16px',
+                backgroundColor: '#fff',
+                color: '#0052cc',
+                border: '2px solid #fff',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+              }}
+            >
+              🔄 Refresh
+            </button>
             <button
               onClick={() => setShowAnalytics(true)}
               style={{
@@ -387,6 +413,8 @@ const Dashboard = () => {
       )}
 
       {showAnalytics && <Analytics onClose={() => setShowAnalytics(false)} />}
+
+      <MCPStatus />
     </div>
   );
 };

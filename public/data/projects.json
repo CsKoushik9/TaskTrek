@@ -1,0 +1,20 @@
+[
+  {
+    "id": "default",
+    "name": "Default Project",
+    "description": "Default project for tasks",
+    "key": "DEF"
+  },
+  {
+    "id": "1754128023013",
+    "name": "Test Project",
+    "description": "MCP test project",
+    "key": "TEST"
+  },
+  {
+    "id": "1754130012424",
+    "name": "TaskTrek",
+    "description": "TaskTrek project management system development and enhancements",
+    "key": "TREK"
+  }
+]

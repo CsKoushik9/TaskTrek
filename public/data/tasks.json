@@ -1,0 +1,220 @@
+[
+  {
+    "id": "1754126736064",
+    "title": "Test Task from MCP",
+    "description": "This is a test task created by the MCP server",
+    "type": "feature",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "default",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "test",
+      "mcp"
+    ],
+    "createdAt": "2025-08-02T09:25:36.064Z",
+    "updatedAt": "2025-08-02T09:25:36.064Z"
+  },
+  {
+    "id": "1754127603845",
+    "title": "Test Task from MCP",
+    "description": "This is a test task created by the MCP server",
+    "type": "feature",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "default",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "test",
+      "mcp"
+    ],
+    "createdAt": "2025-08-02T09:40:03.845Z",
+    "updatedAt": "2025-08-02T09:40:03.847Z"
+  },
+  {
+    "id": "1754128022994",
+    "title": "Quick Test Task",
+    "description": "Testing MCP server functionality",
+    "type": "feature",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "default",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "test"
+    ],
+    "createdAt": "2025-08-02T09:47:02.994Z",
+    "updatedAt": "2025-08-02T09:47:02.995Z"
+  },
+  {
+    "id": "1754130028108",
+    "title": "Add more analytics views (FRONTEND)",
+    "description": "Enhance the analytics dashboard with additional views and visualizations:\n\n- Add task completion trends over time (daily, weekly, monthly)\n- Implement project-wise performance metrics\n- Create burndown charts for project progress tracking\n- Add team productivity analytics with individual contributor metrics\n- Implement task type distribution charts (bug, feature, enhancement)\n- Add priority-based analytics showing high/medium/low priority task distribution\n- Create time-to-completion analytics for different task types\n- Implement comparative analytics between projects\n- Add export functionality for analytics data (CSV, PDF)\n- Create customizable dashboard widgets that users can arrange",
+    "type": "enhancement",
+    "priority": "high",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "frontend",
+      "analytics",
+      "dashboard",
+      "visualization"
+    ],
+    "createdAt": "2025-08-02T10:20:28.108Z",
+    "updatedAt": "2025-08-02T10:20:28.111Z"
+  },
+  {
+    "id": "1754130052233",
+    "title": "Host the webpage in remote server",
+    "description": "Deploy TaskTrek application to a remote server for production use:\n\n- Set up CI/CD pipeline for automated deployments\n- Configure production build optimization (minification, bundling)\n- Choose and configure hosting platform (AWS, Vercel, Netlify, or DigitalOcean)\n- Set up domain name and SSL certificate for secure HTTPS access\n- Configure environment variables for production settings\n- Implement database hosting solution for persistent data storage\n- Set up monitoring and logging for production environment\n- Configure backup and disaster recovery procedures\n- Implement load balancing if needed for scalability\n- Set up staging environment for testing before production deployment\n- Configure CDN for faster content delivery\n- Implement security measures (firewall, rate limiting, CORS)",
+    "type": "feature",
+    "priority": "high",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "deployment",
+      "hosting",
+      "devops",
+      "production",
+      "infrastructure"
+    ],
+    "createdAt": "2025-08-02T10:20:52.233Z",
+    "updatedAt": "2025-08-02T10:20:52.233Z"
+  },
+  {
+    "id": "1754130093153",
+    "title": "Add more animations",
+    "description": "Enhance user experience with smooth and engaging animations throughout the application:\n\n- Implement page transition animations between different views\n- Add loading animations for data fetching operations\n- Create hover effects for interactive elements (buttons, cards, links)\n- Implement smooth slide-in/slide-out animations for modals and sidebars\n- Add progress animations for task completion status changes\n- Create animated icons and micro-interactions for better feedback\n- Implement smooth scrolling and parallax effects where appropriate\n- Add fade-in animations for newly created tasks and projects\n- Create animated charts and graphs in analytics views\n- Implement drag-and-drop animations for task reordering\n- Add skeleton loading screens for better perceived performance\n- Create celebration animations for task completion\n- Implement smooth expand/collapse animations for task details\n- Add CSS transitions for theme switching (dark/light mode)",
+    "type": "enhancement",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "frontend",
+      "animations",
+      "ux",
+      "css",
+      "interactions"
+    ],
+    "createdAt": "2025-08-02T10:21:33.154Z",
+    "updatedAt": "2025-08-02T10:21:33.154Z"
+  },
+  {
+    "id": "1754130107017",
+    "title": "Send weekly reports",
+    "description": "Implement automated weekly reporting system to keep stakeholders informed:\n\n- Create weekly report template with key metrics and insights\n- Implement automated report generation with project progress summaries\n- Add task completion statistics (completed, in-progress, overdue)\n- Include team productivity metrics and individual contributor highlights\n- Generate charts and visualizations for report data\n- Implement email notification system for report distribution\n- Create customizable report recipients list per project\n- Add report scheduling functionality (weekly, bi-weekly, monthly options)\n- Implement report history and archive functionality\n- Create PDF export capability for reports\n- Add executive summary section with key highlights and blockers\n- Implement trend analysis comparing current week with previous weeks\n- Add milestone tracking and upcoming deadline alerts\n- Create customizable report templates for different stakeholder groups\n- Implement report delivery confirmation and read receipts",
+    "type": "feature",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "reporting",
+      "automation",
+      "email",
+      "analytics",
+      "notifications"
+    ],
+    "createdAt": "2025-08-02T10:21:47.017Z",
+    "updatedAt": "2025-08-02T10:21:47.017Z"
+  },
+  {
+    "id": "1754130124058",
+    "title": "Capability to configure AI chat bots within the task comments",
+    "description": "Integrate AI chatbot functionality directly into task comment system for enhanced collaboration:\n\n- Implement AI chatbot integration (OpenAI GPT, Claude, or similar) within task comments\n- Create configuration interface for AI bot settings (model selection, temperature, context)\n- Add @bot mention functionality to trigger AI responses in comment threads\n- Implement context-aware responses based on task details and project information\n- Create AI bot personas for different use cases (code reviewer, project manager, QA tester)\n- Add capability to configure different AI models per project or team\n- Implement conversation history and context retention within task threads\n- Create AI-powered task analysis and suggestion features\n- Add automated code review capabilities when code snippets are shared\n- Implement AI-powered task estimation and timeline suggestions\n- Create smart notifications when AI detects potential issues or blockers\n- Add AI-powered task categorization and labeling suggestions\n- Implement privacy controls and data handling for AI interactions\n- Create usage analytics and cost tracking for AI API calls\n- Add fallback mechanisms when AI services are unavailable",
+    "type": "feature",
+    "priority": "high",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "ai",
+      "chatbot",
+      "comments",
+      "integration",
+      "automation"
+    ],
+    "createdAt": "2025-08-02T10:22:04.058Z",
+    "updatedAt": "2025-08-02T10:22:04.058Z"
+  },
+  {
+    "id": "1754130137142",
+    "title": "Capability to generate AI comments",
+    "description": "Implement AI-powered comment generation to assist users with task documentation and communication:\n\n- Create AI comment generation interface with customizable prompts and templates\n- Implement context-aware comment suggestions based on task status and history\n- Add AI-powered progress update generation for task status changes\n- Create automated comment generation for code commits and pull requests\n- Implement AI-generated meeting notes and action items from task discussions\n- Add smart comment templates for different task types (bug reports, feature requests)\n- Create AI-powered task summary generation for stakeholder updates\n- Implement automated comment generation for milestone achievements\n- Add AI-assisted comment translation for multi-language teams\n- Create intelligent comment categorization and tagging\n- Implement AI-powered comment sentiment analysis and tone suggestions\n- Add automated follow-up comment generation for overdue tasks\n- Create AI-generated test case comments and acceptance criteria\n- Implement smart comment formatting and markdown generation\n- Add AI-powered comment quality scoring and improvement suggestions\n- Create batch comment generation for multiple tasks\n- Implement AI-generated retrospective comments and lessons learned",
+    "type": "feature",
+    "priority": "medium",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "ai",
+      "comments",
+      "generation",
+      "automation",
+      "documentation"
+    ],
+    "createdAt": "2025-08-02T10:22:17.142Z",
+    "updatedAt": "2025-08-02T10:22:17.142Z"
+  },
+  {
+    "id": "1754130150183",
+    "title": "Fit and finish UX",
+    "description": "Polish the user experience with comprehensive fit and finish improvements:\n\n- Conduct comprehensive UX audit and identify pain points in user workflows\n- Implement consistent design system with standardized colors, typography, and spacing\n- Add responsive design improvements for mobile and tablet devices\n- Create intuitive navigation with breadcrumbs and clear information hierarchy\n- Implement accessibility improvements (WCAG 2.1 compliance, keyboard navigation, screen reader support)\n- Add contextual help tooltips and onboarding tutorials for new users\n- Implement smart search functionality with filters and auto-suggestions\n- Create customizable user preferences and settings panel\n- Add drag-and-drop functionality for task management and prioritization\n- Implement bulk operations for task management (bulk edit, delete, assign)\n- Create keyboard shortcuts for power users and improved productivity\n- Add dark/light theme toggle with system preference detection\n- Implement error handling with user-friendly error messages and recovery options\n- Create loading states and skeleton screens for better perceived performance\n- Add confirmation dialogs for destructive actions\n- Implement undo/redo functionality for critical operations\n- Create export/import functionality for data portability\n- Add print-friendly views for reports and task lists",
+    "type": "enhancement",
+    "priority": "high",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [
+      "ux",
+      "ui",
+      "accessibility",
+      "responsive",
+      "polish",
+      "usability"
+    ],
+    "createdAt": "2025-08-02T10:22:30.183Z",
+    "updatedAt": "2025-08-02T10:22:30.183Z"
+  },
+  {
+    "id": "1754132319231",
+    "title": "Fix MCP server sync issue",
+    "description": "Resolve synchronization issues between MCP server and TaskTrek application. The sync issue was fixed by moving the common storage to the public directory.",
+    "type": "bug",
+    "priority": "high",
+    "status": "resolved",
+    "projectId": "TREK",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [],
+    "createdAt": "2025-08-02T10:58:39.231Z",
+    "updatedAt": "2025-08-02T10:58:49.614Z"
+  },
+  {
+    "id": "1754132432415",
+    "title": "Fix MCP server sync issue",
+    "description": "Resolve synchronization issues between MCP server and TaskTrek application. The sync issue was fixed by moving the common storage to the public directory.",
+    "type": "bug",
+    "priority": "high",
+    "status": "screen",
+    "projectId": "1754130012424",
+    "componentId": "frontend",
+    "assigneeId": "unassigned",
+    "labels": [],
+    "createdAt": "2025-08-02T11:00:32.415Z",
+    "updatedAt": "2025-08-02T11:00:32.415Z"
+  }
+]

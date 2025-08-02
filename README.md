@@ -2,6 +2,37 @@
 
 A modern, JIRA-like project management tool built with React. TaskTrek provides an intuitive interface for managing tasks, projects, and team collaboration with real-time analytics and comprehensive workflow management.
 
+## 🤖 AI Integration Available
+
+**TaskTrek MCP Server** is available for AI assistant integration! This allows you to manage tasks through natural language commands.
+
+### MCP Server Repository
+**🔗 [TaskTrek MCP Server](https://github.com/CsKoushik9/TaskTrekMCP)**
+
+For detailed setup instructions, configuration, and usage examples, visit the dedicated MCP server repository.
+
+### Quick Setup:
+```bash
+git clone https://github.com/CsKoushik9/TaskTrekMCP.git
+cd TaskTrekMCP
+npm install
+npm start
+```
+
+### Supported AI Assistants:
+- **Claude Desktop** (Recommended)
+- **Cline** (VS Code Extension)
+- **Continue.dev** (VS Code)
+- Any MCP-compatible client
+
+### Example AI Commands:
+- "Create a high-priority bug task for login issues"
+- "List all tasks in the default project"
+- "Update task DEF-123 to in-progress status"
+- "Show me a summary of all tasks"
+
+**📖 Full Documentation**: [https://github.com/CsKoushik9/TaskTrekMCP](https://github.com/CsKoushik9/TaskTrekMCP)
+
 ## ✨ Features
 
 ### Core Functionality
@@ -75,6 +106,7 @@ A modern, JIRA-like project management tool built with React. TaskTrek provides 
 2. **Create Your First Task**: Click the "Create New Task" button to add a task
 3. **Manage Projects**: Use the "⚙️ Manage Projects" button to set up projects, components, and assignees
 4. **View Analytics**: Click "📊 Analytics" to see detailed project metrics and charts
+5. **MCP Status**: Check the bottom-right corner for MCP server connection status
 
 ### Task Management
 
